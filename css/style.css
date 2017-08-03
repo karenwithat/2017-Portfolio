@@ -18,10 +18,27 @@ body {
 .row:nth-of-type(even){
   background-color: #640a64;
   color:#fff;
+  box-shadow: 5px 5px 3px rgba(100,10,100,.2);
 }
 
 #intro{
-  height:500px;
+  padding:3em 0em;
+  width:100%;
+}
+
+.btn{
+  margin-right:1em;
+}
+
+.btn-outline-primary{
+  border: 1px solid #640a64;
+  background-color:#fff;
+  color: #640a64;
+}
+
+btn-outline-primary:hover{
+  background-color:#640a64;
+  color:white;
 }
 
 .header__nav > .nav-item:hover{
@@ -44,10 +61,19 @@ body {
 }
 
 
+.unclassed-link{
+  text-decoration:none;
+  color:#fff;
+}
+
+.unclassed-link:hover{
+  text-decoration:underline;
+  color:#fff;
+}
 
 
 /*NAVIGATION*/
-.nav-item {
+.nav-item{
   transition: padding, margin, color, border-bottom;
   transition-duration: 0.5s;
   margin-right: 30px;
@@ -66,7 +92,9 @@ body {
   margin-top: -15px;
   color: #c113c1;
   border-bottom: none;
+  .nav{margin-top:1.25em;}
 }
+
 
 /*TYPOGRAPHY*/
 h1 {
@@ -75,6 +103,10 @@ h1 {
 
 h2 {
   font-size: 22px;
+}
+
+h3{
+  font-size:17px;
 }
 
 p {
@@ -87,15 +119,16 @@ p {
 }
 
 .content__name{
-  font-size:32px;
+  font-size:72px;
   text-align:center;
 }
 
 .content__subtitle{
-  text-align:center;
   border-top: 1px solid #640a64;
   border-bottom: 1px solid #640a64;
-  padding-left: 1em;
-  font-size:16px;
+  padding:1em 0;
   height:50px;
+  width:50%;
+  margin-top:1em;
+  line-height:1;
 }
