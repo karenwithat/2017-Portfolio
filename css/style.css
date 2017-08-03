@@ -38,6 +38,7 @@ body {
 
 btn-outline-primary:hover{
   background-color:#640a64;
+  border-color:#640a64;
   color:white;
 }
 
@@ -103,6 +104,10 @@ h1 {
 
 h2 {
   font-size: 22px;
+}
+
+.portfolio-header{
+  font-size: 32px;
 }
 
 h3{
