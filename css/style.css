@@ -1,5 +1,17 @@
+/*
+TABLE OF content__subtitle
+1. body
+2. structure
+3. typography
+4. helper classes
+5. navigation
+
+
+*/
+
 body {
   font-family: "Titillium Web", sans-serif;
+  background-color:#bbb;
 }
 
 /*STRUCTURE*/
@@ -18,16 +30,20 @@ body {
 .row:nth-of-type(even){
   background-color: #640a64;
   color:#fff;
-  box-shadow: 5px 5px 3px rgba(100,10,100,.2);
+}
+
+.row:nth-of-type(odd){
+  background-color:#fff;
 }
 
 #intro{
   padding:3em 0em;
-  width:100%;
+  min-height:50vh;
 }
 
 .btn{
   margin-right:1em;
+  align-self:center;
 }
 
 .btn-outline-primary{
@@ -51,7 +67,7 @@ btn-outline-primary:hover{
   border-left: 1px solid #ccc;
 }
 
-
+/*HELPER CLASSES*/
 
 .header__logo {
   padding: 10px;
@@ -64,14 +80,17 @@ btn-outline-primary:hover{
 
 .unclassed-link{
   text-decoration:none;
-  color:#640a64;
+  color:rgb(175,10,200);
 }
 
 .unclassed-link:hover{
   text-decoration:underline;
-  color:#fff;
+  color:rgb(175,10,200);
 }
 
+.portfolio-image{
+  margin-bottom:1em;
+}
 
 /*NAVIGATION*/
 .nav-item{
@@ -92,9 +111,9 @@ btn-outline-primary:hover{
   padding-bottom: 15px;
   margin-top: -15px;
   color: #c113c1;
-  border-bottom: none;
+  border-bottom: none;}
+
   .nav{margin-top:1.25em;}
-}
 
 
 /*TYPOGRAPHY*/

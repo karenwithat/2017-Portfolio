@@ -6,6 +6,7 @@ TODO:
   - Finish hooking up contact form
   - Put in images for the portfolio
   - Customize Stylesheet further
+  - Testimonial Quotes
   - Add animation functionality
   - Attach sticky header
   - Mess with footer
@@ -26,19 +27,19 @@ TODO:
 
   </head>
   <body>
-    <div class="container-fluid">
-      <div id="intro" class="row justify-content-center">
+    <div class="container">
+      <div id="intro" class="row justify-content-center section-row">
           <h1 class="content__name col-lg-12">Tearyne Glover</h1>
           <span class="text-center text-uppercase content__subtitle">
             Frontend Web Developer - UI/UX Designer</span>
           <br>
           <div class="row justify-content-around col-lg-12 ">
-            <a href="#about" class="btn btn-lg btn-outline-primary col-lg-3" role="button">Learn More About Tearyne</a>
-            <a href="t-glover-developer-resume.pdf" class="btn btn-lg btn-outline-primary col-lg-3" role="button">Download Resume</a>
+            <a href="#about" class="btn btn-outline-primary col-lg-3" role="button">Learn More About Tearyne</a>
+            <a href="t-glover-developer-resume.pdf" class="btn btn-outline-primary col-lg-3" role="button">Download Resume</a>
           </div>
       </div>
 
-      <div id="about" class="row">
+      <div id="about" class="row section-row">
         <h2 class="page-name col-md-4 col-sm-12 div__page-title">About Tearyne</h2>
         <div class="col-md-8 col-sm-12 div__page-content">
           <p>Tearyne is a frontend web developer and UX/UI Designer living in
@@ -76,18 +77,24 @@ TODO:
         </div>
       </div>
 
-      <!--<div id="portfolio" class="row" >
+      <div id="portfolio" class="row section-row" >
         <h2 class="col-md-12 text-center portfolio-header">Portfolio</h2>
         <div class="row">
-          <img class="rounded mx-auto" src="\imgs\twitter-better-together-tearyne.png" alt="Twitter Graphic for the Better Together campaign"></a>
-          <img class="rounded mx-auto" src="\imgs\better-together-poster-tearyne-2-sm.png" alt="Poster designed for the Better Together Campaign. It lists the speakers over a bowling alley backdrop.">
-          <img class="rounded mx-auto" src="\imgs\facebook-better-tearyne-glover.png" alt="Facebook graphic for the Better Together Campaign">
-          <img class="rounded mx-auto" src="\imgs\electric-logo.png" alt="Personal logo. The last name glover is displayed in capital letters in yellow and green. The O looks like a light socket, and the R has a tail with a plug">
+          <img class="portfolio-image rounded mx-auto" src="imgs\better-together-poster-tearyne-2-sm.png" alt="Poster graphic for the Better Together Campaign">
+          <br>
+          <h2 class="col-lg-12 text-center">Style Tiles</h3>
+            <br>
+          <img class="portfolio-image img-fluid rounded mx-auto" src="imgs\ecclectic-style.png" />
+          <br>
+          <img class="portfolio-image img-fluid rounded mx-auto" src="imgs\electric-style.png"  />
+          <br>
+          <img class="portfolio-image img-fluid rounded mx-auto" src="imgs\vibrant-style.png">
+          <br>
           <p></p>
         </div>
-      </div>-->
+      </div>
 
-      <div id="articles" class="row">
+      <div id="articles" class="row section-row">
         <h2 class="page-name col-md-4 col-sm-12 div__page-title">Things Tearyne Has Written</h2>
         <div class="div__page-content">
           <ul>
@@ -98,7 +105,7 @@ TODO:
       </div>
       </div>
 
-      <div id="contact" class="row">
+      <!--<div id="contact" class="row section-row">
         <h2 class="page-name col-md-4 col-sm-12 div__page-title">Contact Tearyne</h2>
         <div class="col-md-5 div__page-content">
           <div class="form-area">
@@ -133,6 +140,13 @@ TODO:
           </ul>
         </nav>
       </footer>
-    </div>
+    </div> -->
   </body>
+<script>
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+</script>
+
 </html>
