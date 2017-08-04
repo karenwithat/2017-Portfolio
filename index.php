@@ -113,6 +113,7 @@ TODO:
               <br style="clear:both">
           				<div class="form-group">
       						<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                  	<?php echo "<p class='text-danger'>$errName</p>";?>
       					</div>
       					<div class="form-group">
       						<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>

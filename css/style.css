@@ -38,7 +38,10 @@ body {
 
 #intro{
   padding:3em 0em;
-  min-height:50vh;
+  height:100vh;
+
+
+
 }
 
 .btn{
